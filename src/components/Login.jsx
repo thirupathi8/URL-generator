@@ -16,15 +16,14 @@ function Login({ onLoginComplete }) {
         body: JSON.stringify({ email, password }),
       })
 
-      if (response.ok) {
-        onLoginComplete()
-      } 
-      
-      else {
-        const errorMessage = await response.text()
-        console.error("Login failed:", errorMessage)
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error("Login Failed")
       }
 
+      localStorage.setItem("sessionToken", data.token)
+      onLoginComplete()
     }
     catch (error) {
       console.error("Error:", error)
