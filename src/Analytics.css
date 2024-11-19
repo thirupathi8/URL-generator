@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.analytics-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.analytics-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0078D7;
+}
+
+.analytics-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.analytics-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.analytics-button {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0078D7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.analytics-button:hover {
+    background-color: #005bb5;
+}
+
+.analytics-data {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.analytics-clicks {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.analytics-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.analytics-list-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.analytics-list-item:last-child {
+    border-bottom: none;
+}
+
+.analytics-placeholder {
+    font-size: 1rem;
+    color: #777;
+}
