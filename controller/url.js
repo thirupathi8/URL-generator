@@ -2,6 +2,7 @@ import { nanoid } from 'nanoid'
 import URL from '../models/url.js'
 
 const handleGenShortURL = async (req, res) => {
+    // console.log("Request Body:", req.body);
     const body = req.body
     if(!body.url) 
         return res.status(400).json({error: "Url is required"})
